@@ -1,19 +1,42 @@
-# 🎈 Blank app template
+# 🔍 Kid Detective Game
 
-A simple Streamlit app template for you to modify!
+A fun and educational detective game for kids (Grade 4 level) built with Streamlit!
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## 🎮 How to Play
 
-### How to run it on your own machine
+1. Read the mystery story
+2. Look at the list of suspects
+3. Ask questions about each suspect to get hints
+4. Use the clues to figure out who did it
+5. Make your guess!
 
-1. Install the requirements
+## 🚀 How to Run
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+### Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-2. Run the app
+### Run the game:
+```bash
+streamlit run detective_game.py
+```
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+The game will open in your default web browser!
+
+## ✨ Features
+
+- **3 Different Mysteries** - Each game randomly picks a mystery
+- **Question & Hint System** - Ask about suspects to get clues
+- **Kid-Friendly** - Simple language and colorful UI
+- **Track Progress** - See all your previous questions
+- **Play Again** - Start a new mystery anytime
+- **Celebratory Animations** - Balloons when you win!
+
+## 🎯 Mystery Examples
+
+- 🍪 The stolen cookie mystery
+- 🎨 The wall drawing mystery
+- 🧸 The hidden teddy bears mystery
+
+Have fun being a detective! 🕵️
