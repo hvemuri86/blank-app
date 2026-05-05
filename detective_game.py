@@ -51,7 +51,12 @@ def get_hint(suspect):
     clues = mystery["clues"][suspect]
 
     # Return a clue based on how many questions were asked about this suspect
-    asked_about_suspect = [q for q in st.session_state.questions_asked if suspect.lower() in q.lower()]
+    asked_about_suspect = []
+    for q in st.session_state.questions_asked:
+        question_text = q[0] if isinstance(q, tuple) else q
+        if suspect.lower() in question_text.lower():
+            asked_about_suspect.append(question_text)
+
     clue_index = len(asked_about_suspect) % len(clues)
 
     return clues[clue_index]
